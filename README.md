@@ -20,3 +20,11 @@ Um sistema simples de reserva de salas, desenvolvido em dupla como parte dos est
 
 ## 📁 Estrutura do Projeto
 
+Sistema_reserva/
+├── servidor/
+│   └── servidor.py        # Código responsável por receber e processar pedidos de reserva de assentos
+├── cliente/
+│   └── cliente.py         # Interface em terminal que permite o usuário solicitar reservas ao servidor
+└── README.md              # Documentação do projeto
+
+
