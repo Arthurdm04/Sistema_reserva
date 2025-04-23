@@ -1,28 +1,23 @@
-# Sistema_reserva
+# ✈️ Sistema de Reserva de Assentos de Avião
 
-Um sistema simples de reserva de salas, desenvolvido em dupla como parte dos estudos da disciplina de [nome da matéria, se quiser adicionar].
+Este projeto simula um sistema de reserva de assentos de um avião, utilizando comunicação **cliente-servidor** via **sockets TCP** em Python. O servidor gerencia as reservas e os clientes se conectam para solicitar assentos.
 
-## ✨ Funcionalidades
+## ⚙️ Funcionalidades
 
-- Cadastro de usuários (nome, email, etc)
-- Cadastro de salas
-- Reserva de salas com verificação de disponibilidade
-- Listagem de reservas feitas
-- Sistema de login (caso tenha)
+- Reserva de múltiplos assentos simultaneamente
+- Verificação de disponibilidade em tempo real
+- Respostas personalizadas indicando assentos reservados ou já ocupados
+- Controle de concorrência para evitar reservas duplicadas
 
-## 🛠 Tecnologias utilizadas
+## 🛠 Tecnologias Utilizadas
 
-- Python
-- SQLite (banco de dados local)
-- Tkinter (interface gráfica)
+- Python 3
+- Módulo `socket` (para comunicação cliente-servidor)
+- Módulo `threading` (para múltiplos clientes simultâneos)
 
 ## 📁 Estrutura do Projeto
 
 Sistema_reserva/
-├── servidor/
-│   └── servidor.py        # Código responsável por receber e processar pedidos de reserva de assentos
-├── cliente/
-│   └── cliente.py         # Interface em terminal que permite o usuário solicitar reservas ao servidor
-└── README.md              # Documentação do projeto
-
-
+├── cliente.py        # Código do cliente: conecta ao servidor e envia solicitações de reserva de assentos
+├── servidor.py       # Código do servidor: gerencia reservas e lida com múltiplos clientes simultaneamente
+└── README.md         # Documentação do projeto
