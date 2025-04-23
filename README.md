@@ -1,7 +1,5 @@
 # Sistema_reserva
 
-# Sistema de Reserva
-
 Um sistema simples de reserva de salas, desenvolvido em dupla como parte dos estudos da disciplina de [nome da matéria, se quiser adicionar].
 
 ## ✨ Funcionalidades
